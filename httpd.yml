@@ -1,0 +1,6 @@
+---
+- hosts: Docker-Server
+
+  tasks:
+    - name: Creating new containers
+      shell: docker container run -itd --name webapp-container2 -p 9090:80 prvinsm21/docker-webapp2
